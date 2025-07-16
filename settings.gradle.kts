@@ -14,7 +14,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AudiBooker"
+rootProject.name = "TickerPro"
 include(":app")
 include(":common:common")
 include(":common:core")

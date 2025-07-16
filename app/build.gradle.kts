@@ -1,4 +1,4 @@
-import com.eliascoelho911.ebookreader.plugin.CommonAndroidComposePlugin
+import com.eliascoelho911.tickerpro.plugin.CommonAndroidComposePlugin
 
 plugins {
     id(libs.plugins.com.android.application.get().pluginId)
@@ -11,10 +11,10 @@ plugins {
 apply<CommonAndroidComposePlugin>()
 
 android {
-    namespace = "com.eliascoelho911.ebookreader"
+    namespace = "com.eliascoelho911.tickerpro"
 
     defaultConfig {
-        applicationId = "com.eliascoelho911.ebookreader"
+        applicationId = "com.eliascoelho911.tickerpro"
         versionCode = 1
         versionName = "1.0"
     }

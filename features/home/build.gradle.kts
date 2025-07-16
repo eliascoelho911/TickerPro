@@ -1,4 +1,4 @@
-import com.eliascoelho911.ebookreader.plugin.AndroidFeaturePlugin
+import com.eliascoelho911.tickerpro.plugin.AndroidFeaturePlugin
 
 plugins {
     id(libs.plugins.androidLibrary.get().pluginId)
@@ -9,7 +9,7 @@ plugins {
 apply<AndroidFeaturePlugin>()
 
 android {
-    namespace = "com.eliascoelho911.ebookreader.home"
+    namespace = "com.eliascoelho911.tickerpro.home"
 }
 
 // TODO: Migrate using https://github.com/MAshhal/ComposeCompilerConventionPlugin/blob/main/build-logic/convention/build.gradle.kts

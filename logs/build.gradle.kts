@@ -1,4 +1,4 @@
-import com.eliascoelho911.ebookreader.plugin.CommonAndroidComposePlugin
+import com.eliascoelho911.tickerpro.plugin.CommonAndroidComposePlugin
 
 plugins {
     id(libs.plugins.androidLibrary.get().pluginId)

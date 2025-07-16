@@ -1,4 +1,4 @@
-import com.eliascoelho911.ebookreader.plugin.CommonAndroidComposePlugin
+import com.eliascoelho911.tickerpro.plugin.CommonAndroidComposePlugin
 
 plugins {
     id(libs.plugins.androidLibrary.get().pluginId)
@@ -10,7 +10,7 @@ plugins {
 apply<CommonAndroidComposePlugin>()
 
 android {
-    namespace = "com.eliascoelho911.ebookreader.core"
+    namespace = "com.eliascoelho911.tickerpro.core"
 }
 
 // TODO: Migrate using https://github.com/MAshhal/ComposeCompilerConventionPlugin/blob/main/build-logic/convention/build.gradle.kts
