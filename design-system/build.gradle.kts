@@ -21,6 +21,7 @@ composeCompiler {
 
 dependencies {
     implementation(libs.material)
+    implementation(libs.compose.ui.text.google.fonts)
 
     api(libs.ui)
     api(libs.ui.graphics)

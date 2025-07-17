@@ -63,7 +63,7 @@ dependencies {
     implementation(libs.navigation.fragment.ktx)
     implementation(libs.navigation.ui.ktx)
     implementation(project(":common:core"))
-    implementation(project(":features:home"))
+    implementation(project(":features:dashboard"))
     implementation(project(":design-system"))
     implementation(project(":logs"))
 

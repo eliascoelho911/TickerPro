@@ -9,7 +9,7 @@ plugins {
 apply<AndroidFeaturePlugin>()
 
 android {
-    namespace = "com.eliascoelho911.tickerpro.home"
+    namespace = "com.eliascoelho911.tickerpro.dashboard"
 }
 
 // TODO: Migrate using https://github.com/MAshhal/ComposeCompilerConventionPlugin/blob/main/build-logic/convention/build.gradle.kts

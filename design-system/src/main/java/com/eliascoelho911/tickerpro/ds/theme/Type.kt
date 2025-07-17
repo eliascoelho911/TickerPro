@@ -1,73 +1,48 @@
 package com.eliascoelho911.tickerpro.ds.theme
 
 import androidx.compose.material3.Typography
-import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.googlefonts.Font
+import androidx.compose.ui.text.googlefonts.GoogleFont
 import com.eliascoelho911.tickerpro.ds.R
 
-val HelveticaNeueFontFamily = FontFamily(
-    Font(R.font.helvetica_neue_regular, FontWeight.Normal),
-    Font(R.font.helvetica_neue_medium, FontWeight.Medium),
-    Font(R.font.helvetica_neue_bold, FontWeight.Bold),
+val provider = GoogleFont.Provider(
+    providerAuthority = "com.google.android.gms.fonts",
+    providerPackage = "com.google.android.gms",
+    certificates = R.array.com_google_android_gms_fonts_certs
 )
 
-val LatoFontFamily = FontFamily(
-    Font(R.font.lato_regular, FontWeight.Normal),
-    Font(R.font.lato_bold, FontWeight.Medium),
-    Font(R.font.lato_bold, FontWeight.Bold),
-)
-
-val JosefinSansFontFamily = FontFamily(
-    Font(R.font.josefin_sans_medium),
-)
-
-val Typography = Typography().let { defaultTypography ->
-    defaultTypography.copy(
-        displayLarge = defaultTypography.displayLarge.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        displayMedium = defaultTypography.displayMedium.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        displaySmall = defaultTypography.displaySmall.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        headlineLarge = defaultTypography.headlineLarge.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        headlineMedium = defaultTypography.headlineMedium.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        headlineSmall = defaultTypography.headlineSmall.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        titleLarge = defaultTypography.titleLarge.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        titleMedium = defaultTypography.titleMedium.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        titleSmall = defaultTypography.titleSmall.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        bodyLarge = defaultTypography.bodyLarge.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        bodyMedium = defaultTypography.bodyMedium.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        bodySmall = defaultTypography.bodySmall.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        labelLarge = defaultTypography.labelLarge.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        labelMedium = defaultTypography.labelMedium.copy(
-            fontFamily = LatoFontFamily,
-        ),
-        labelSmall = defaultTypography.labelSmall.copy(
-            fontFamily = LatoFontFamily,
-        ),
+val bodyFontFamily = FontFamily(
+    Font(
+        googleFont = GoogleFont("Poppins"),
+        fontProvider = provider,
     )
-}
+)
+
+val displayFontFamily = FontFamily(
+    Font(
+        googleFont = GoogleFont("Lato"),
+        fontProvider = provider,
+    )
+)
+
+// Default Material 3 typography values
+val baseline = Typography()
+
+val AppTypography = Typography(
+    displayLarge = baseline.displayLarge.copy(fontFamily = displayFontFamily),
+    displayMedium = baseline.displayMedium.copy(fontFamily = displayFontFamily),
+    displaySmall = baseline.displaySmall.copy(fontFamily = displayFontFamily),
+    headlineLarge = baseline.headlineLarge.copy(fontFamily = displayFontFamily),
+    headlineMedium = baseline.headlineMedium.copy(fontFamily = displayFontFamily),
+    headlineSmall = baseline.headlineSmall.copy(fontFamily = displayFontFamily),
+    titleLarge = baseline.titleLarge.copy(fontFamily = displayFontFamily),
+    titleMedium = baseline.titleMedium.copy(fontFamily = displayFontFamily),
+    titleSmall = baseline.titleSmall.copy(fontFamily = displayFontFamily),
+    bodyLarge = baseline.bodyLarge.copy(fontFamily = bodyFontFamily),
+    bodyMedium = baseline.bodyMedium.copy(fontFamily = bodyFontFamily),
+    bodySmall = baseline.bodySmall.copy(fontFamily = bodyFontFamily),
+    labelLarge = baseline.labelLarge.copy(fontFamily = bodyFontFamily),
+    labelMedium = baseline.labelMedium.copy(fontFamily = bodyFontFamily),
+    labelSmall = baseline.labelSmall.copy(fontFamily = bodyFontFamily),
+)

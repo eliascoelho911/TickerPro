@@ -16,7 +16,7 @@ The project uses Gradle with Kotlin DSL and version catalogs for dependency mana
 - **Run tests**: `./gradlew test`
 - **Run Android tests**: `./gradlew connectedAndroidTest`
 - **Clean build**: `./gradlew clean`
-- **Build specific module**: `./gradlew :app:build` or `./gradlew :features:home:build`
+- **Build specific module**: `./gradlew :app:build` or `./gradlew :features:dashboard:build`
 
 ### Build Configuration
 
@@ -36,7 +36,7 @@ The project follows a multi-module architecture:
 - **`:common:common`** - Common utilities and file management
 - **`:common:core`** - Core architecture components (BaseViewModel, Navigation, UI patterns)
 - **`:design-system`** - UI components and theming for investment portfolio UI
-- **`:features:home`** - Home feature module for portfolio overview
+- **`:features:...`** - All the features of the application, such as home, portfolio, and settings.
 - **`:logs`** - Logging utilities with AndroidLogger and ComposeLogger
 
 ### Architecture Patterns
