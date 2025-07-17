@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.shareIn
 import kotlinx.coroutines.flow.update
 
-abstract class BaseViewModel<ACTION : com.eliascoelho911.tickerpro.core.arch.UIAction, STATE : UIState, INTENT : UIIntent>(initialState: STATE) :
+abstract class BaseViewModel<ACTION : UIAction, STATE : UIState, INTENT : UIIntent>(initialState: STATE) :
     ViewModel() {
 
     protected val logger: AndroidLogger = AndroidLogger(this::class.java.simpleName)
