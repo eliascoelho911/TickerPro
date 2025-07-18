@@ -26,9 +26,8 @@ class CommonAndroidComposePlugin : Plugin<Project> {
             buildFeatures.compose = true
 
             tasks.withType(KotlinCompile::class.java) {
-                kotlinOptions {
-                    freeCompilerArgs =
-                        listOf("-Xopt-in=androidx.compose.material3.ExperimentalMaterial3Api")
+                compilerOptions {
+                    optIn.add("androidx.compose.material3.ExperimentalMaterial3Api")
                 }
             }
         }

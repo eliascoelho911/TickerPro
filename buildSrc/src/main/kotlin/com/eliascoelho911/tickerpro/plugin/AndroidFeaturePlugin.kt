@@ -37,6 +37,7 @@ class AndroidFeaturePlugin : Plugin<Project> {
             "implementation"(project(":common:core"))
             "implementation"(project(":logs"))
             "implementation"(project(":design-system"))
+            "implementation"(libs.findLibrary("ui.tooling.preview").get())
             "debugImplementation"(libs.findLibrary("ui.tooling").get())
             "debugImplementation"(libs.findLibrary("ui.test.manifest").get())
         }

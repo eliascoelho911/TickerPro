@@ -34,6 +34,7 @@ The project follows a multi-module architecture:
 
 - **`:app`** - Main application module with MainActivity and Application class
 - **`:common:common`** - Common utilities and file management
+- **`:common:data-domain`** - Data domain layer for managing models and data sources
 - **`:common:core`** - Core architecture components (BaseViewModel, Navigation, UI patterns)
 - **`:design-system`** - UI components and theming for investment portfolio UI
 - **`:features:...`** - All the features of the application, such as home, portfolio, and settings.
