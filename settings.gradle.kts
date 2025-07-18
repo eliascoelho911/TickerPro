@@ -17,6 +17,7 @@ dependencyResolutionManagement {
 rootProject.name = "TickerPro"
 include(":app")
 include(":common:common")
+include(":common:data-domain")
 include(":common:core")
 include(":logs")
 include(":design-system")
